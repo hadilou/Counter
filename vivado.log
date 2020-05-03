@@ -1,0 +1,455 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Dec 26 04:07:36 2019
+# Process ID: 6628
+# Current directory: C:/Users/Kayode Hadilou ADJE/AppData/Roaming/Xilinx/Vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8960
+# Log file: C:/Users/Kayode Hadilou ADJE/AppData/Roaming/Xilinx/Vivado/vivado.log
+# Journal file: C:/Users/Kayode Hadilou ADJE/AppData/Roaming/Xilinx/Vivado\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Kayode Hadilou ADJE/Downloads/sorunlu/sorunlu/Counter/Counter.xpr}
+INFO: [Project 1-313] Project file moved from 'P:/VHDL/sorunlu/Counter' since last save.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Kayode Hadilou ADJE/Downloads/sorunlu/counter.xpr/counter/counter.srcs/constrs_1/imports/project_1/Nexys4DDR_Master.xdc', nor could it be found using path 'P:/VHDL/counter.xpr/counter/counter.srcs/constrs_1/imports/project_1/Nexys4DDR_Master.xdc'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/Kayode Hadilou ADJE/Downloads/sorunlu/sorunlu/Counter/Debouncer_sim_behav.wcfg', nor could it be found using path 'P:/VHDL/sorunlu/Counter/Debouncer_sim_behav.wcfg'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 739.699 ; gain = 154.051
+update_compile_order -fileset sources_1
+update_files -from_files C:/Xilinx/Projects/counter/counter.srcs/constrs_1/imports/project_1/Nexys4DDR_Master.xdc -to_files {{C:/Users/Kayode Hadilou ADJE/Downloads/sorunlu/counter.xpr/counter/counter.srcs/constrs_1/imports/project_1/Nexys4DDR_Master.xdc}} -filesets [get_filesets *]
+INFO: [filemgmt 20-762] Replacing file 'C:/Users/Kayode Hadilou ADJE/Downloads/sorunlu/counter.xpr/counter/counter.srcs/constrs_1/imports/project_1/Nexys4DDR_Master.xdc' with file 'C:/Xilinx/Projects/counter/counter.srcs/constrs_1/imports/project_1/Nexys4DDR_Master.xdc'.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Kayode Hadilou ADJE/Downloads/sorunlu/sorunlu/Counter/Counter.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Debouncer_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Kayode Hadilou ADJE/Downloads/sorunlu/sorunlu/Counter/Counter.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Debouncer_sim_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Kayode Hadilou ADJE/Downloads/sorunlu/sorunlu/Counter/Counter.srcs/sources_1/new/Debouncer_design.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Debouncer_design'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Kayode Hadilou ADJE/Downloads/sorunlu/sorunlu/Counter/Counter.srcs/sim_1/new/Debouncer_sim.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Debouncer_sim'
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Kayode Hadilou ADJE/Downloads/sorunlu/sorunlu/Counter/Counter.sim/sim_1/behav/xsim'
+"xelab -wto d640fd92d8574ed590a5d32b0db5c404 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Debouncer_sim_behav xil_defaultlib.Debouncer_sim -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto d640fd92d8574ed590a5d32b0db5c404 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Debouncer_sim_behav xil_defaultlib.Debouncer_sim -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.Debouncer_design [debouncer_design_default]
+Compiling architecture behavioral of entity xil_defaultlib.debouncer_sim
+Built simulation snapshot Debouncer_sim_behav
+
+****** Webtalk v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Kayode -notrace
+couldn't read file "C:/Users/Kayode": no such file or directory
+INFO: [Common 17-206] Exiting Webtalk at Thu Dec 26 04:31:16 2019...
+run_program: Time (s): cpu = 00:00:02 ; elapsed = 00:00:12 . Memory (MB): peak = 785.566 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '12' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+WARNING: [USF-XSim-17] WCFG file does not exist:C:/Users/Kayode Hadilou ADJE/Downloads/sorunlu/sorunlu/Counter/Debouncer_sim_behav.wcfg
+WARNING: [USF-XSim-17] WCFG file does not exist:C:/Users/Kayode Hadilou ADJE/Downloads/sorunlu/sorunlu/Counter/Debouncer_sim_behav.wcfg
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Kayode Hadilou ADJE/Downloads/sorunlu/sorunlu/Counter/Counter.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Debouncer_sim_behav -key {Behavioral:sim_1:Functional:Debouncer_sim} -tclbatch {Debouncer_sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source Debouncer_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 796.563 ; gain = 6.055
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Debouncer_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:16 ; elapsed = 00:00:26 . Memory (MB): peak = 796.563 ; gain = 10.996
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 1000 ns
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 1000 us
+run 1000 us
+run 1000 us
+run 1000 us
+run 1000 us
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 1000 ms
+run: Time (s): cpu = 00:02:38 ; elapsed = 00:02:13 . Memory (MB): peak = 813.105 ; gain = 0.000
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: Debouncer_design
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1225.758 ; gain = 173.691
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Debouncer_design' [C:/Users/Kayode Hadilou ADJE/Downloads/sorunlu/sorunlu/Counter/Counter.srcs/sources_1/new/Debouncer_design.vhd:42]
+WARNING: [Synth 8-614] signal 'reset' is read in the process but is not in the sensitivity list [C:/Users/Kayode Hadilou ADJE/Downloads/sorunlu/sorunlu/Counter/Counter.srcs/sources_1/new/Debouncer_design.vhd:70]
+INFO: [Synth 8-256] done synthesizing module 'Debouncer_design' (1#1) [C:/Users/Kayode Hadilou ADJE/Downloads/sorunlu/sorunlu/Counter/Counter.srcs/sources_1/new/Debouncer_design.vhd:42]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1289.738 ; gain = 237.672
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1289.738 ; gain = 237.672
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1289.738 ; gain = 237.672
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Xilinx/Projects/counter/counter.srcs/constrs_1/imports/project_1/Nexys4DDR_Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'clk'. [C:/Xilinx/Projects/counter/counter.srcs/constrs_1/imports/project_1/Nexys4DDR_Master.xdc:7]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Xilinx/Projects/counter/counter.srcs/constrs_1/imports/project_1/Nexys4DDR_Master.xdc:7]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'clk'. [C:/Xilinx/Projects/counter/counter.srcs/constrs_1/imports/project_1/Nexys4DDR_Master.xdc:8]
+CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_ports clk]'. [C:/Xilinx/Projects/counter/counter.srcs/constrs_1/imports/project_1/Nexys4DDR_Master.xdc:8]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'counter_out[0]'. [C:/Xilinx/Projects/counter/counter.srcs/constrs_1/imports/project_1/Nexys4DDR_Master.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Xilinx/Projects/counter/counter.srcs/constrs_1/imports/project_1/Nexys4DDR_Master.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'counter_out[1]'. [C:/Xilinx/Projects/counter/counter.srcs/constrs_1/imports/project_1/Nexys4DDR_Master.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Xilinx/Projects/counter/counter.srcs/constrs_1/imports/project_1/Nexys4DDR_Master.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'counter_out[2]'. [C:/Xilinx/Projects/counter/counter.srcs/constrs_1/imports/project_1/Nexys4DDR_Master.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Xilinx/Projects/counter/counter.srcs/constrs_1/imports/project_1/Nexys4DDR_Master.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'counter_out[3]'. [C:/Xilinx/Projects/counter/counter.srcs/constrs_1/imports/project_1/Nexys4DDR_Master.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Xilinx/Projects/counter/counter.srcs/constrs_1/imports/project_1/Nexys4DDR_Master.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'button_inpulse'. [C:/Xilinx/Projects/counter/counter.srcs/constrs_1/imports/project_1/Nexys4DDR_Master.xdc:87]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Xilinx/Projects/counter/counter.srcs/constrs_1/imports/project_1/Nexys4DDR_Master.xdc:87]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Xilinx/Projects/counter/counter.srcs/constrs_1/imports/project_1/Nexys4DDR_Master.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1383.246 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:31 ; elapsed = 00:00:22 . Memory (MB): peak = 1430.027 ; gain = 377.961
+6 Infos, 8 Warnings, 7 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:40 ; elapsed = 00:00:32 . Memory (MB): peak = 1430.027 ; gain = 616.922
+refresh_design
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Xilinx/Projects/counter/counter.srcs/constrs_1/imports/project_1/Nexys4DDR_Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'clk'. [C:/Xilinx/Projects/counter/counter.srcs/constrs_1/imports/project_1/Nexys4DDR_Master.xdc:8]
+CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_ports clk]'. [C:/Xilinx/Projects/counter/counter.srcs/constrs_1/imports/project_1/Nexys4DDR_Master.xdc:8]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+Finished Parsing XDC File [C:/Xilinx/Projects/counter/counter.srcs/constrs_1/imports/project_1/Nexys4DDR_Master.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:10 . Memory (MB): peak = 1888.297 ; gain = 384.668
+refresh_design
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Xilinx/Projects/counter/counter.srcs/constrs_1/imports/project_1/Nexys4DDR_Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'clk_100MHz'. [C:/Xilinx/Projects/counter/counter.srcs/constrs_1/imports/project_1/Nexys4DDR_Master.xdc:8]
+CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_ports clk_100MHz]'. [C:/Xilinx/Projects/counter/counter.srcs/constrs_1/imports/project_1/Nexys4DDR_Master.xdc:8]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+Finished Parsing XDC File [C:/Xilinx/Projects/counter/counter.srcs/constrs_1/imports/project_1/Nexys4DDR_Master.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:09 . Memory (MB): peak = 1894.387 ; gain = 3.184
+refresh_design
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Xilinx/Projects/counter/counter.srcs/constrs_1/imports/project_1/Nexys4DDR_Master.xdc]
+Finished Parsing XDC File [C:/Xilinx/Projects/counter/counter.srcs/constrs_1/imports/project_1/Nexys4DDR_Master.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:11 . Memory (MB): peak = 2117.238 ; gain = 1.480
+set_property top Counter_design [current_fileset]
+set_property top Counter_sim [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+launch_simulation
+boost::filesystem::remove: The process cannot access the file because it is being used by another process: "C:/Users/Kayode Hadilou ADJE/Downloads/sorunlu/sorunlu/Counter/Counter.sim/sim_1/behav/xsim/simulate.log"
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 2117.238 ; gain = 0.000
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2117.238 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Counter_design' [C:/Users/Kayode Hadilou ADJE/Downloads/sorunlu/sorunlu/Counter/Counter.srcs/sources_1/new/Counter_design.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'Counter_design' (1#1) [C:/Users/Kayode Hadilou ADJE/Downloads/sorunlu/sorunlu/Counter/Counter.srcs/sources_1/new/Counter_design.vhd:42]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2117.238 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2117.238 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2117.238 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Xilinx/Projects/counter/counter.srcs/constrs_1/imports/project_1/Nexys4DDR_Master.xdc]
+Finished Parsing XDC File [C:/Xilinx/Projects/counter/counter.srcs/constrs_1/imports/project_1/Nexys4DDR_Master.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:18 . Memory (MB): peak = 2117.238 ; gain = 0.000
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Kayode Hadilou ADJE/Downloads/sorunlu/sorunlu/Counter/Counter.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Counter_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Kayode Hadilou ADJE/Downloads/sorunlu/sorunlu/Counter/Counter.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Counter_sim_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Kayode Hadilou ADJE/Downloads/sorunlu/sorunlu/Counter/Counter.srcs/sources_1/new/Counter_design.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Counter_design'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Kayode Hadilou ADJE/Downloads/sorunlu/sorunlu/Counter/Counter.srcs/sim_1/new/Counter_sim.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Counter_sim'
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Kayode Hadilou ADJE/Downloads/sorunlu/sorunlu/Counter/Counter.sim/sim_1/behav/xsim'
+"xelab -wto d640fd92d8574ed590a5d32b0db5c404 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Counter_sim_behav xil_defaultlib.Counter_sim -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto d640fd92d8574ed590a5d32b0db5c404 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Counter_sim_behav xil_defaultlib.Counter_sim -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.Counter_design [counter_design_default]
+Compiling architecture behavioral of entity xil_defaultlib.counter_sim
+Built simulation snapshot Counter_sim_behav
+
+****** Webtalk v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Kayode -notrace
+couldn't read file "C:/Users/Kayode": no such file or directory
+INFO: [Common 17-206] Exiting Webtalk at Thu Dec 26 19:37:58 2019...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 2117.238 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '10' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+WARNING: [USF-XSim-17] WCFG file does not exist:C:/Users/Kayode Hadilou ADJE/Downloads/sorunlu/sorunlu/Counter/Debouncer_sim_behav.wcfg
+WARNING: [USF-XSim-17] WCFG file does not exist:C:/Users/Kayode Hadilou ADJE/Downloads/sorunlu/sorunlu/Counter/Debouncer_sim_behav.wcfg
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Kayode Hadilou ADJE/Downloads/sorunlu/sorunlu/Counter/Counter.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Counter_sim_behav -key {Behavioral:sim_1:Functional:Counter_sim} -tclbatch {Counter_sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source Counter_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Counter_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:19 . Memory (MB): peak = 2117.238 ; gain = 0.000
+set_property top Debouncer_sim [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+set_property top Debouncer_design [current_fileset]
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2117.238 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Debouncer_design' [C:/Users/Kayode Hadilou ADJE/Downloads/sorunlu/sorunlu/Counter/Counter.srcs/sources_1/new/Debouncer_design.vhd:42]
+WARNING: [Synth 8-614] signal 'reset' is read in the process but is not in the sensitivity list [C:/Users/Kayode Hadilou ADJE/Downloads/sorunlu/sorunlu/Counter/Counter.srcs/sources_1/new/Debouncer_design.vhd:70]
+INFO: [Synth 8-256] done synthesizing module 'Debouncer_design' (1#1) [C:/Users/Kayode Hadilou ADJE/Downloads/sorunlu/sorunlu/Counter/Counter.srcs/sources_1/new/Debouncer_design.vhd:42]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2117.238 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2117.238 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2117.238 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Xilinx/Projects/counter/counter.srcs/constrs_1/imports/project_1/Nexys4DDR_Master.xdc]
+Finished Parsing XDC File [C:/Xilinx/Projects/counter/counter.srcs/constrs_1/imports/project_1/Nexys4DDR_Master.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:15 . Memory (MB): peak = 2117.238 ; gain = 0.000
+launch_simulation
+boost::filesystem::remove: The process cannot access the file because it is being used by another process: "C:/Users/Kayode Hadilou ADJE/Downloads/sorunlu/sorunlu/Counter/Counter.sim/sim_1/behav/xsim/simulate.log"
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Kayode Hadilou ADJE/Downloads/sorunlu/sorunlu/Counter/Counter.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Debouncer_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Kayode Hadilou ADJE/Downloads/sorunlu/sorunlu/Counter/Counter.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Debouncer_sim_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Kayode Hadilou ADJE/Downloads/sorunlu/sorunlu/Counter/Counter.sim/sim_1/behav/xsim'
+"xelab -wto d640fd92d8574ed590a5d32b0db5c404 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Debouncer_sim_behav xil_defaultlib.Debouncer_sim -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto d640fd92d8574ed590a5d32b0db5c404 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Debouncer_sim_behav xil_defaultlib.Debouncer_sim -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+WARNING: [USF-XSim-17] WCFG file does not exist:C:/Users/Kayode Hadilou ADJE/Downloads/sorunlu/sorunlu/Counter/Debouncer_sim_behav.wcfg
+WARNING: [USF-XSim-17] WCFG file does not exist:C:/Users/Kayode Hadilou ADJE/Downloads/sorunlu/sorunlu/Counter/Debouncer_sim_behav.wcfg
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Kayode Hadilou ADJE/Downloads/sorunlu/sorunlu/Counter/Counter.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Debouncer_sim_behav -key {Behavioral:sim_1:Functional:Debouncer_sim} -tclbatch {Debouncer_sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source Debouncer_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Debouncer_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:12 . Memory (MB): peak = 2143.695 ; gain = 0.000
+run 1000 ms
+run: Time (s): cpu = 00:00:19 ; elapsed = 00:00:16 . Memory (MB): peak = 2143.695 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 100 ms
+run: Time (s): cpu = 00:00:19 ; elapsed = 00:00:15 . Memory (MB): peak = 2143.695 ; gain = 0.000
+run 100 ms
+run: Time (s): cpu = 00:00:16 ; elapsed = 00:00:13 . Memory (MB): peak = 2143.695 ; gain = 0.000
+run 100 s
+run: Time (s): cpu = 00:01:58 ; elapsed = 00:01:38 . Memory (MB): peak = 2143.695 ; gain = 0.000
+archive_project C:/Xilinx/Projects/Counter.xpr.zip -temp_dir {C:/Users/Kayode Hadilou ADJE/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-6628-Kayode} -force -exclude_run_results
+INFO: [Coretcl 2-137] starting archive...
+INFO: [Coretcl 2-1499] Saving project copy to temporary location 'C:/Users/Kayode Hadilou ADJE/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-6628-Kayode' for archiving project
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/Kayode Hadilou ADJE/Downloads/sorunlu/sorunlu/Counter/Debouncer_sim_behav.wcfg'.
+Scanning sources...
+Finished scanning sources
+INFO: [Coretcl 2-1211] Creating project copy for archival...
+INFO: [ProjectBase 1-495] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience any problem with archiving the project, please consider setting environment variable $TEMP to a shorter path.
+Current project path is 'C:/Users/Kayode Hadilou ADJE/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-6628-Kayode/PrjAr/_X_'.
+INFO: [Coretcl 2-135] resetting runs for excluding generated files from archive...
+WARNING: [Coretcl 2-105] Run 'synth_1' is currently active
+INFO: [Coretcl 2-133] re-setting run 'synth_1'...
+INFO: [Coretcl 2-133] re-setting run 'impl_1'...
+WARNING: [Coretcl 2-52] File 'C:/Users/Kayode Hadilou ADJE/Downloads/sorunlu/sorunlu/Counter/Debouncer_sim_behav.wcfg' does not exist
+INFO: [Coretcl 2-1212] Importing remotely added design sources and verilog include files (if any)...
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'constrs_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sim_1'
+WARNING: [filemgmt 20-342] File / dir doesn't exist, skipping: C:/Users/Kayode Hadilou ADJE/Downloads/sorunlu/sorunlu/Counter/Debouncer_sim_behav.wcfg
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'sources_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1'
